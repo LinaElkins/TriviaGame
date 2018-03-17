@@ -2,6 +2,8 @@ function submitAnswers() {
     var totalQ = 6;
     var score = 0;
 
+    //Set timer  - imcomplete
+
     //Get player answer inputs
     var q1 = document.forms["quizForm"]["q1"].value;
     var q2 = document.forms["quizForm"]["q2"].value;
@@ -23,13 +25,13 @@ function submitAnswers() {
     //Correct answers for the questions
     var answers = ['b','b','b','d','a','c'];
     
-    //check players answers if correct or not
+    //Player gets 1 point for answering 1 question correctly
     for(i=1; i<=totalQ; i++) {
         if(eval('q'+i)== answers[i-1]) {
             score++;
         }
     }
-    //display results
+    //display results after player submit answers
     alert(" you scored  "  +  score + "  out of  " + totalQ);
 
     return false;
