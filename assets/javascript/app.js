@@ -1,8 +1,31 @@
+var timer = 30;
+//Set timer  - imcomplete
+var intervalId;
+
+$("#play").on("click", run);
+
+function run() {
+    clearInterval(intervalId);
+    intervalId = setInterval(decrement, 1000);
+}
+
+    //  The decrement function.
+    function decrement() {
+
+        //  Decrease number by one.
+        timer--;
+  
+        //  Show the number in the #show-number tag.
+        $("#timer").html("<h2>" + timer + "</h2>");
+    };
+    
+//Hide the question
+
+//if Timer runs out of time, it stops the game;
+
 function submitAnswers() {
     var totalQ = 6;
     var score = 0;
-
-    //Set timer  - imcomplete
 
     //Get player answer inputs
     var q1 = document.forms["quizForm"]["q1"].value;

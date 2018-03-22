@@ -5,6 +5,17 @@ font-size:15px;
 border-style: groove;
 }
 
+#play{
+background:darkorange;
+    font-size:15px;
+    text-align: center;
+    border-style:outset;
+    padding:10px 15px;
+    cursor:pointer;
+    width:50%;
+    float:center;
+}
+
 #container{
     width:80%;
     background-image: url("MaxTessie.jpg");
